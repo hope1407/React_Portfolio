@@ -24,7 +24,7 @@ function Homepage() {
           <Nav.Link eventKey="link-4">Resume</Nav.Link>
         </Nav.Item>
       </Nav>
-      <Container>
+      <Container className="my-footer">
         <Row>
           <Col>1 of 3</Col>
           <Col>2 of 3</Col>
