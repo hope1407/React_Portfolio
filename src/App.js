@@ -2,16 +2,16 @@ import "./App.css";
 //import Homepage from "./components/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Homepage from "./components/homepage"
+import Homepage from "./components/Homepage"
 import Profile from "./components/Profile";
 import Work from "./components/Work"
+import ContactUs from "./components/Contact"
 import Footer from "./components/Footer"
 
 function App() {
   return (
     <Router>
       <Nav />
-
       <Switch>
         <Route exact path="/">
           <Homepage />
@@ -23,11 +23,11 @@ function App() {
           <Work/>
         </Route>
         <Route exact path="/contact">
-          <Footer />
+          <ContactUs/>
           </Route>
         <Route exact path="/resume">{"resume"}</Route>
       </Switch>
-
+      <Footer />
       {/* <Homepage /> */}
     </Router>
   );

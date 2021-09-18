@@ -2,7 +2,8 @@ import {NavLink} from "react-router-dom"
 
 export default function Nav() {
   return (
-    <header>
+    <div>
+      <header>
       <p className="name">John Hope</p>
       <nav>
         <ul>
@@ -13,5 +14,10 @@ export default function Nav() {
         </ul>
       </nav>
     </header>
+    <section class="buffer">
+        <div id="tagline">Full Stack Web Developer</div>
+      </section>
+    </div>
+    
   );
 }
