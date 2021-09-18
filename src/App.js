@@ -2,7 +2,6 @@ import "./App.css";
 //import Homepage from "./components/homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Homepage from "./components/Homepage"
 import Profile from "./components/Profile";
 import Work from "./components/Work"
 import ContactUs from "./components/Contact"
@@ -14,7 +13,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Homepage />
+          <Profile/>
         </Route>
         <Route exact path="/about">
           <Profile />

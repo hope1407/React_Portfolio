@@ -1,10 +1,13 @@
 import {NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 export default function Nav() {
   return (
     <div>
       <header>
-      <p className="name">John Hope</p>
+        <Link to="/">
+        <p className="name">John Hope</p>
+        </Link>
       <nav>
         <ul>
           <NavLink to="/about" activeStyle={{color: 'red'}}>About Me</NavLink>
