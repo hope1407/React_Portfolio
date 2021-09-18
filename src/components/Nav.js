@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom"
 import {Link} from "react-router-dom"
+import Pdf from '../Resume/Resume.pdf';
 
 export default function Nav() {
   return (
@@ -10,10 +11,10 @@ export default function Nav() {
         </Link>
       <nav>
         <ul>
-          <NavLink to="/about" activeStyle={{color: 'red'}}>About Me</NavLink>
-          <NavLink to="/work" activeStyle={{color: 'red'}}>Work</NavLink>
-          <NavLink to="/contact" activeStyle={{color: 'red'}}>Contact Me</NavLink>
-          <NavLink to="/resume" activeStyle={{color: 'red'}}>Resume</NavLink>
+          <NavLink to="/about" activeStyle={{color: '#ff9b42'}}>About Me</NavLink>
+          <NavLink to="/work" activeStyle={{color: '#ff9b42'}}>Work</NavLink>
+          <NavLink to="/contact" activeStyle={{color: '#ff9b42'}}>Contact Me</NavLink>
+          <a target="_blank" rel="noopener noreferrer" href = {Pdf} activeStyle={{color: '#ff9b42'}}>Resume</a>
         </ul>
       </nav>
     </header>

@@ -3,9 +3,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Profile from "./components/Profile";
-import Work from "./components/Work"
-import ContactUs from "./components/Contact"
-import Footer from "./components/Footer"
+import Work from "./components/Work";
+import ContactUs from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,21 +13,19 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Profile/>
+          <Profile />
         </Route>
         <Route exact path="/about">
           <Profile />
         </Route>
         <Route exact path="/work">
-          <Work/>
+          <Work />
         </Route>
         <Route exact path="/contact">
-          <ContactUs/>
-          </Route>
-        <Route exact path="/resume">{"resume"}</Route>
+          <ContactUs />
+        </Route>
       </Switch>
       <Footer />
-      {/* <Homepage /> */}
     </Router>
   );
 }
