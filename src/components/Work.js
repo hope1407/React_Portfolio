@@ -1,3 +1,4 @@
+
 export default function Work() {
     return (<section className="worklocation" id="worklink">
     <article>
@@ -32,6 +33,24 @@ export default function Work() {
           </a>
         </div>
       </div>
+    </article>
+    <article className="repos">
+      <h1>Project Repositories</h1>
+      <a href="https://github.com/hope1407/Bike2Work">
+        <button className="repoBtn">Bike2Work</button>
+        </a>
+        <a href="https://github.com/hope1407/Password_Generator">
+        <button className="repoBtn">Password Generator</button>
+        </a>
+        <a href="https://github.com/msteblu/CodingLand">
+        <button className="repoBtn">Trivialympics</button>
+        </a>
+        <a href="https://github.com/hope1407/Day_Planner">
+        <button className="repoBtn">Day Planner</button>
+        </a>
+        <a href="https://github.com/hope1407/Note_Taker2">
+        <button className="repoBtn">Note Taker</button>
+        </a>
     </article>
   </section>)
 }

@@ -1,21 +1,42 @@
-import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function ContactUs() {
+
+  const email = useState("");
+  const name = useState("");
+
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const handleInputChange = (e) => {
+      const { target } = e;
+      const inputType = target.name;
+      const inputValue = target.value;
 
-    emailjs.sendForm('service_bjvev9x', 'template_x25p72e', form.current, 'user_ROeYO4BAY97S4vmNFYDEO')
-      .then((result) => {
+      if (inputType !== "email") {
+
+      }
+  }
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_bjvev9x",
+        "template_x25p72e",
+        form.current,
+        "user_ROeYO4BAY97S4vmNFYDEO"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
   const thankyou = () => {
-    alert("Thanks for the inquiry!  I'll get back to you soon!")
-  }
+    alert("Thanks for the inquiry!  I'll get back to you soon!");
+  };
 
   return (
     <form className="emailform" ref={form} onSubmit={sendEmail}>
@@ -28,4 +49,4 @@ export default function ContactUs() {
       <input type="submit" value="Send" id="sendbtn" onClick={thankyou} />
     </form>
   );
-};
+}

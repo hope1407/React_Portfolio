@@ -140,6 +140,7 @@ header p {
   width: 100%;
   height: 500px;
   margin-bottom: 10px;
+  background-image: url(./images/bike2Work.jpg);
   opacity: 0.5;
   display: flex;
   justify-content: center;
@@ -162,7 +163,30 @@ header p {
   bottom: 435px;
 }
 
+.repos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 35px;
+}
+
+.repoBtn {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: rgb(59, 63, 63);
+  color: rgb(129, 260, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.repoBtn:hover {
+  background-color: #ff9b42;
+  color: rgb(59, 63, 63)
+}
+
 #img1 {
+  background-image: url(./images/passwordGenerator.png);
   background-position: center;
   opacity: 0.5;
 }
@@ -172,6 +196,7 @@ header p {
 }
 
 #img2 {
+  background-image: url(./images/dayPlanner.png);
   opacity: 0.5;
 }
 
@@ -180,6 +205,7 @@ header p {
 }
 
 #img3 {
+  background-image: url(./images/Trivialympics.png);
   opacity: 0.5;
 }
 
@@ -188,6 +214,7 @@ header p {
 }
 
 #img4 {
+  background-image: url(./images/note.png);
   background-position: center;
   opacity: 0.5;
 }
@@ -445,4 +472,13 @@ header p {
   background-color: #ff9b42;
   height: 125px;
   width: 75%;
+}
+
+#me {
+  height: 300px;
+  width: 375px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  left: 100px;
 }

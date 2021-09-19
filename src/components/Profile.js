@@ -1,3 +1,4 @@
+import Me from '../images/Me.jpg';
 export default function Profile() {
   return (
     <section className="amlocation" id="aboutmelink">
@@ -13,6 +14,7 @@ export default function Profile() {
           Minnesota.
         </p>
       </article>
+      <img id="me" src={Me} alt="Logo" />
     </section>
   );
 }
