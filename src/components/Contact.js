@@ -1,23 +1,20 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
+import { validateEmail } from '../utils/helpers';
+
 export default function ContactUs() {
 
-  const email = useState("");
-  const name = useState("");
+    const [email] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
   const form = useRef();
 
-  const handleInputChange = (e) => {
-      const { target } = e;
-      const inputType = target.name;
-      const inputValue = target.value;
-
-      if (inputType !== "email") {
-
-      }
-  }
   const sendEmail = () => {
+    
+      if (!validateEmail(email)) {
+          setErrorMessage('Please Enter a')
+      }
     emailjs
       .sendForm(
         "service_bjvev9x",
