@@ -21,7 +21,7 @@ export default function ContactUs() {
       setMessage(inputValue);
     }
 
-    if (!name || !message) {
+    if (name === '' || message === '') {
       setRequiredField("Please fill out all fields!");
     } else {
       setRequiredField("");
