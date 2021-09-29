@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <div>
       <header>
-        <Link to="/">
+        <Link to="/React_Portfolio/">
         <p className="name">John Hope</p>
         </Link>
       <nav>
