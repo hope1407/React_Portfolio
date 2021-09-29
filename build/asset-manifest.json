@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.b8fba6b3.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.99bc31b4.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.99bc31b4.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.7a05d344.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.7a05d344.js.map",
+    "static/js/2.425619a3.chunk.js": "/React-Portfolio/static/js/2.425619a3.chunk.js",
+    "static/js/2.425619a3.chunk.js.map": "/React-Portfolio/static/js/2.425619a3.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.b8fba6b3.chunk.css.map": "/React-Portfolio/static/css/main.b8fba6b3.chunk.css.map",
+    "static/js/2.425619a3.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.425619a3.chunk.js.LICENSE.txt",
+    "static/media/Me.da93b85a.jpg": "/React-Portfolio/static/media/Me.da93b85a.jpg",
+    "static/media/Resume.9ea45b36.pdf": "/React-Portfolio/static/media/Resume.9ea45b36.pdf",
+    "static/media/App.css": "/React-Portfolio/static/media/passwordGenerator.15f278bb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a05d344.js",
+    "static/js/2.425619a3.chunk.js",
+    "static/css/main.b8fba6b3.chunk.css",
+    "static/js/main.99bc31b4.chunk.js"
+  ]
+}
